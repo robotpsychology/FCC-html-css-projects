@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FCC: Survey Form</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Music Preference Survey Form</h1>
+            <p id="description">Tell us about your musical preferences so we can better serve you</p>
+        </header>
+        <form action="" id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="age" id="number-label">Age</label>
+                <input type="number" name="age" id="number" placeholder="Age" min="13" max="120">
+            </div>
+
+            <div class="form-group">
+                <p>What kind of listner are you?</p>
+                <select name="listener-type" id="dropdown">
+                    <option value="">--Please choose an option--</option>
+                    <option value="casual">Casual</option>
+                    <option value="audiophile">Audiophile</option>
+                    <option value="analytical">Analytical</option>
+                    <option value="podcaster">Podcaster</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Would you recommend our service to a friend?</p>
+                <label>
+                    <input type="radio" name="user-recommended" value="definetely">
+                    Definetely
+                </label> 
+                <label for="maybe">
+                    <input type="radio" name="user-recommended" value="maybe">
+                    Maybe
+                </label> 
+                <label>
+                    <input type="radio" name="user-recommended" value="not-sure">
+                    Not Sure
+                </label> 
+            </div>
+            <div class="form-group">
+                <p>What is your favorite feature of our platform?</p>
+                <select name="favorite-feature" id="dropdown">
+                    <option value="ease-of-use">Ease of Use</option>
+                    <option value="customizability">Customizability</option>
+                    <option value="new-music-section">New Music Section</option>
+                    <option value="album-reviews">Album Reviews</option>
+                    <option value="artist-recommendations">Artist Recommendations</option>
+                    <option value="artist-store">Artist Store</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>What would you like to see improved? <span>(Check all that apply)</span> </p>
+                <label for="improvement">
+                    <input type="checkbox" name="improvement" value="music-load-time">
+                    Music Load Time
+                </label>
+                <label >
+                    <input type="checkbox" name="improvement" value="song-recommendations">
+                    Song Recommendations
+                </label>
+                <label >
+                    <input type="checkbox" name="improvement" value="help-section">
+                    Help Section
+                </label>
+                <label >
+                    <input type="checkbox" name="improvement" value="equalizer-options">
+                    Equalizer Options
+                </label>
+                <label >
+                    <input type="checkbox" name="improvement" value="artist-page-art">
+                    Artist Page Art
+                </label>
+                <label>
+                    <input type="checkbox" name="improvement" value="friends-sections">
+                    Friends Section
+                </label>
+                <label>
+                    <input type="checkbox" name="improvement" value="catalog">
+                    Catalog
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea name="additional-comments" id="" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit" id="submit">
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: whitesmoke;
+    font-family:'Poppins', sans-serif;
+    line-height: 2;
+    background-image: url('./photo-of-band-performing-to-crowd-of-people-at-a-concert-2675648.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+header {
+    text-align: center;
+    margin: 30px auto;
+    text-shadow: -1px -2px 2px rgba(121, 121, 121, 0.356);
+    font-weight: lighter/
+}
+
+
+.container {
+
+}
+
+#survey-form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(107, 80, 107, 0.609);
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+    padding: 10px 40px;
+    font-size: 1.25em;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+}
+
+.form-group input,
+.form-group select {
+    border-radius: 2px;
+    padding: 10px;
+    background-clip: padding-box;
+    background-color: #eee;
+}
+
+.form-group textarea {
+    padding: 10px 0 0 10px;
+    font-family: inherit;
+}
